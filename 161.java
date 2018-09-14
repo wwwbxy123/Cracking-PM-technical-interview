@@ -4,16 +4,32 @@ jump to question
 We can imagine that our array looks something like this (with a blank spot at the end):
 14789_
 */
-boolean insert(int[] array, int x){
+public static int[] insert(int[] array, int x){
     for(int i = array.length - 2 ; i >= 0; i--){
-        if(x >= array[i])) {
-            array[i + 1] = x;
-            return true;
-            break;
-        }
-        else{
+        if(x < array[i]) {
             array[i + 1] = array[i];
         }
-        return false;
-    }
+        
+        else if( x >= array[i]){
+            array[i + 1] = x;
+            break;
+        }
+     }
+    return array;
 }
+
+/*
+import java.util.Arrays;
+public class MyClass {
+    public static void main(String args[]) {
+        int array[] = new int[6];
+        array[0] = 1;
+        array[1] = 4;
+        array[2] = 7;
+        array[3] = 8;
+        array[4] = 9;
+        int n = 5;
+        int[] m = insert(array, n);
+        System.out.println(Arrays.toString(m));
+    }
+*/

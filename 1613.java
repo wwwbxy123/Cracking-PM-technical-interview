@@ -25,7 +25,7 @@ int mergeIntoNew(int[] a, int[] b){
             index++;
         }
     }
-     while(i < a.length){
+    while(i < a.length){
         merged[index] = a[i];
         i++;
         index ++;

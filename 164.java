@@ -26,9 +26,10 @@ int[][] totalSales(int[][] data){
 
     //convert hashtable to array
     int[][] total = new int[hash.Keyset.size()][2];
-    for(int j = 0; j < hash.Keyset.size(); j ++){
-        total[j][0] = key;
-        total[j][1] = hash.get(Key);
+    for(int j = 0; j < hash.keySet.size(); j ++){
+        total[a][0] = key;
+        total[a][1] = hash.get(Key);
+        a++;
     }
     return total;
 
